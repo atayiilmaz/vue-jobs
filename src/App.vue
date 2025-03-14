@@ -7,6 +7,17 @@
         tasks: ['task 1', 'task 2', 'task 3'],
         link: 'https://www.google.com'
       }
+    },
+    methods: {
+      toggleStatus () {
+          if (this.status === 'active') {
+            this.status = 'pending';
+          } else if (this.status === 'pending') {
+            this.status = 'inactive';
+          } else {
+            this.status = 'active';
+        }
+      },
     }
   }
 </script>
@@ -23,4 +34,6 @@
   </ul>
 
   <a :href="link">Click for Google</a>
+  <br>
+  <button @click="toggleStatus">Change status</button>
 </template>
