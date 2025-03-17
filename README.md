@@ -2,10 +2,6 @@
 
 It's a single page application that job listings project. The project uses JSON-Server for mock backend.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
 ## Project Setup
 
 ```sh
